@@ -1,0 +1,106 @@
+Pendahuluan Algoritma
+Notasi:
+1. Variable/Atribut/Field
+2. Memberikan nilai ke variable
+3. Input
+4. Output
+5. Switch/Case
+6. Record
+7. Prosedur
+8. Fungsi
+
+1. Notasi variabel/field
+	- Sintaks awal:
+		namaVariabel : tipe data
+		tipe data -> number, real, boolean, character, string, tipe bentukan.
+	- Contoh:
+		nama : string { Membuat variabel nama dengan tipe data string }
+		nilai : real { Membuat variabel nilai dengan tipe data real }
+		jumlahMahasiswa : number { Membuat variabel jumlahMahasiswa dengan tipe data number }
+
+2. Notasi memberikan nilai ke variable
+	- Sintaks awal:
+		namaVariabel <- nilai yang diberikan
+	- Contoh:
+		nama <- "Lutfi"
+		nilai <- 90.7
+		jumlahMahasiswa <- 14
+
+3. Notasi input
+	- Sintaks awal:
+		input(namaVariable)
+	- Contoh:
+		input(nama)
+		input(nilai)
+		input(jumlahMahasiswa)
+
+4. Notasi output
+	- Sintaks awal:
+		output(namaVariable)
+	- Contoh:
+		output(nama)
+		output(nilai)
+		output(jumlahMahasiswa)
+		output("Lutfi")
+		output(14)
+
+5. Notasi Switch/Case
+	- Sintaks awal:
+		case (namaVariabel) of
+			1: { Operasi }
+			2: { Operasi }
+			3: { Operasi }
+		endcase
+	- Contoh:
+		case (nilai) of
+			50: output("Nilainya kecil")
+				output(nama)
+			60: output("Bisalah dapet C")
+			70: output("Hm, patut diperhitungkan")
+			80: output("Tingkatkan lagi!")
+			90: output("Keren!")
+			100: output("Kamu Jenius!")
+		endcase
+
+6. Notasi record
+	- Sintaks awal:
+		type namaRecord : record < { field } >
+	- Contoh:
+		type Mahasiswa : record < NRP: string, Nama: string, IPK: real >
+		type Karyawan : record < kodeP: string, gapok: real, gol: number >
+
+7. Notasi prosedur
+	- Sintaks awal:
+		prosedur NamaProsedur()
+			{ Operasi }
+	- Contoh:
+		prosedur HitungNilaiTotal()
+			nilaiMhs <- uts + uas + quiz + tugas
+			output(nilaiMhs)
+
+8. Notasi fungsi
+	- Sintaks awal:
+		fungsi NamaFungsi() <- { tipe data }
+			{ Operasi }
+			return { nilai yang dikembalikan }
+	- Contoh:
+		fungsi HitungNilaiTotal() <- real
+			nilaiTotal: real
+			nilaiTotal <- uts + uas + quiz + tugas
+			return nilaiTotal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

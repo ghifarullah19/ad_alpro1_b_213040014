@@ -1,0 +1,34 @@
+Algoritma
+type Karyawan : record <
+				gol: number
+				gatot, gapok, bonus, tunjangan: real
+				>
+
+prosedur BacaKaryawan()
+	input(gol)
+
+prosedur SetGapokBonus()
+	case (gol) of
+		1: gapok <- 2000000, bonus <- 0
+		2: gapok <- 2500000, bonus <- 100000
+		3: gapok <- 3000000, bonus <- 200000
+		4: gapok <- 4000000, bonus <- 300000
+	endcase
+
+fungsi HitungTunjangan() <- real
+	tunjangan <- gapok * 0.02
+	return tunjangan
+
+fungsi HitungGatot() <- real
+	gatot <- gapok + bonus + tunjangan
+	return gatot
+
+prosedur TulisKaryawan()
+	output(gol, gapok, bonus, tunjangan, gatot)
+
+main()
+	BacaKaryawan()
+	SetGapokBonus()
+	tunjangan <- HitungTunjangan()
+	gatot <- HitungGatot()
+	TulisKaryawan()
